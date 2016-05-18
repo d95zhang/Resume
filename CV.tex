@@ -1,0 +1,338 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-RESUME-CV
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INSTRUCTIONS FOR COMPILING THIS DOCUMENT ("CV.tex")
+%% TeX ---(XeLaTeX)---> PDF:
+%%
+%% Method 1: Use latexmk for fully automated document generation:
+%%   latexmk -xelatex "CV.tex"
+%%   (add the -pvc switch to automatically recompile on changes)
+%%
+%% Method 2: Use XeLaTeX directly:
+%%   xelatex "CV.tex"
+%%   (run multiple times to resolve cross-references if needed)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \documentclass[a4paper,10pt,oneside]{article}
+\documentclass[letterpaper,10pt,oneside]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TYPESETTING OPTIONS.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\TypesetInNonStopMode}{1}
+\newcommand{\TypesetInDraftMode}{0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{CV-Preamble.tex}
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Diana Zhang}
+\newcommand{\CVTitle}{resume}
+\newcommand{\CVNote}{resume compiled on {\today}}
+\newcommand{\CVWebpage}{http://www.dianazhang.net}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+pdfpagemode={},
+bookmarks=true,
+unicode=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\title{\CVAuthor}
+
+\begin{subtitle}
+%\href{https://www.google.com/maps/place/17+Prime+Avenue,+Springfield,+Pennsylvania+10111,+USA}
+%{17 Prime Avenue, Apt 37, Springfield, Pennsylvania 10111, USA}
+\par
+\href{mailto:diana@dianazhang.net}
+{diana@dianazhang.net}
+%\,\SubBulletSymbol\,
+%+1\,(555)\,101-1001
+\,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\CVWebpage}
+\end{subtitle}
+\begin{body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\section
+{Education}
+{Education}
+{PDF:Education}
+
+\href{http://www.cmu.edu/}
+{\textbf{Carnegie Mellon University}},
+Pittsburgh, Pennsylvania
+\Item
+Master's of Science (M.S.) in
+\href{http://ece.cmu.edu/}
+{Electrical and Computer Engineering}
+\hfill
+Anticipated May 2018
+
+\GapNoBreak
+\href{http://www.psu.edu}
+{\textbf{The Pennsylvania State University}},
+University Park, Pennsylvania
+\Item
+B.S. in
+\href{http://ee.psu.edu/}
+{Electrical Engineering,}
+\href{http://cse.psu.edu/}
+{Computer Engineering}
+\hfill
+\DatestampYMD{2012}{08}{27} --
+\DatestampYMD{2016}{05}{06}
+\begin{detail}
+\SubBulletItem
+Graduated with Honors and Distinction.
+\SubBulletItem
+International Engineering Certificate
+\SubBulletItem
+Cumulative GPA: 3.79 / 4.00
+\end{detail}
+
+\GapNoBreak
+\href{https://www.auckland.ac.nz/}
+{\textbf{University of Auckland}},
+Auckland, New Zealand
+\hfill
+Semester One 2015
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Work Experience}
+{Work Experience}
+{PDF:WorkExperience}
+
+\href{http://eecs.psu.edu/}
+{\textbf{Penn State School of EECS}},
+\textit{Teaching Intern}
+\hfill
+\DatestampYMD{2014}{08}{30} --
+\DatestampYMD{2016}{05}{08}
+\begin{detail}
+\SubBulletItem
+Communicated with students to explain core electrical engineering concepts
+\SubBulletItem
+Enriched student experience with additional conceptual explanations
+\SubBulletItem
+Connected material to industry and subsequent coursework
+\SubBulletItem
+Previous: Troubleshooted hands-on work with students as Lab Assistant
+\hfill
+\DatestampYMD{2013}{08}{30} --
+\DatestampYMD{2014}{05}{08}
+\end{detail}
+
+\GapNoBreak
+\href{https://pennstatelearning.psu.edu/}
+{\textbf{Penn State Learning}},
+\textit{200-level Math Tutor}
+\hfill
+\DatestampYMD{2013}{06}{22} --
+\DatestampYMD{2016}{05}{08}
+\begin{detail}
+\SubBulletItem
+Led exam review sessions with a partner to rooms of 100+ students
+\SubBulletItem
+Assisted students with Multivariable Calculus, Differential Equations, Matrices
+\SubBulletItem
+Motivated students using applications to their particular fields
+\end{detail}
+
+\GapNoBreak
+\href{http://www.clemson.edu/ces/departments/computing/}
+{\textbf{Clemson School of Computing}},
+\textit{Undergraduate Research Assistant}
+\hfill
+\DatestampYMD{2014}{06}{22} --
+\DatestampYMD{2014}{08}{08}
+\begin{detail}
+\SubBulletItem
+Designed power system for a solar-powered, ultra-low power sensor module
+\SubBulletItem
+Utilized CAD tools, a repository, and collaboration for effective design
+\SubBulletItem
+Presented a midterm oral presentation and a final poster presentation
+\end{detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LEADERSHIP EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Leadership Experience}
+{Leadership Experience}
+{PDF:LeadershipExperience}
+
+\href{http://awc.cse.psu.edu/}
+{\textbf{Penn State Association of Women in Computing}},
+\textit{President}
+\hfill
+\DatestampYMD{2014}{09}{} --
+\DatestampYMD{2015}{09}{}
+\begin{detail}
+\SubBulletItem
+Led efforts to attract and retain women in computing at Penn State
+\SubBulletItem
+Coordinated events with companies and Penn State student organizations
+\SubBulletItem
+Previous: Organized Socials, Apparel, and Meetings as Secretary
+\hfill
+\DatestampYMD{2013}{09}{} --
+\DatestampYMD{2014}{09}{}
+\end{detail}
+
+\GapNoBreak
+\textbf{No String Attached A Cappella Ensemble},
+\textit{Music Director}
+\hfill
+\DatestampYMD{2013}{03}{} --
+\DatestampYMD{2014}{11}{}
+\begin{detail}
+\SubBulletItem
+Led rehearsals twice a week, focusing on developing musicality
+\SubBulletItem
+Planned long-term ensemble performance goals, and scheduled accordingly
+\SubBulletItem
+Motivated members to stay engaged throughout rehearsals
+\end{detail}
+
+\GapNoBreak
+\href{http://www.codepsu.com}
+{\textbf{CodePSU Programming Competition}},
+\textit{Board of Directors}
+\hfill
+\DatestampYMD{2013}{10}{} --
+\DatestampYMD{2015}{05}{}
+
+\GapNoBreak
+\href{http://www.ee.psu.edu/hkn/}
+{\textbf{HKN Honors Society, Epsilon Chapter}},
+\textit{Outreach Committee Member}
+\hfill
+\DatestampYMD{2013}{12}{} --
+\DatestampYMD{2014}{12}{}
+
+%%%%%%%%%%%%%%%%%%%%%
+%% Language & Software Skills %%
+%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Software Skills}
+{Software Skills}
+{PDF:Software Skills}
+
+\underline{Hardware Design Tools}: 
+Verilog, Multisim/SPICE, Eagle, ModelSim
+\GapNoBreak
+
+\underline{Programming}: 
+C/C++, Java, Python, HTML/CSS
+\GapNoBreak
+
+\underline{Assembly-Level Programming}: 
+ARM, MIPS, CPU12
+\GapNoBreak
+
+\underline{Other Software}: 
+MATLAB, Linux, \LaTeX, GitHub, Mercurial, FreeRTOS, Esterel
+\GapNoBreak
+
+%%%%%%%%%%%%%%%%%%
+%% OTHER AWARDS %%
+%%%%%%%%%%%%%%%%%%
+
+\section
+{Other Awards}
+{Other Awards}
+{PDF:OtherAwards}
+
+2016 WEP Joelle Leadership Award
+\hfill
+\DatestampYMD{2016}{04}{10}
+\begin{detail}
+\SubItem
+Recognizes a woman who demonstrated leadership, citizenship, and volunteer spirit \newline
+that positively affect the climate for women in the College of Engineering.
+\end{detail}
+
+\GapNoBreak
+Penn State College of Engineering Madden Honors Scholarship
+\hfill
+\DatestampYMD{2012}{09}{}--
+\DatestampYMD{2016}{5}{}
+
+\GapNoBreak
+Penn State Schreyer Honors College Tech Trustee Scholarship
+\hfill
+\DatestampYMD{2014}{09}{}--
+\DatestampYMD{2016}{5}{}
+
+\GapNoBreak
+Penn State Department of Electrical Engineering Guthrie Scholarship
+\hfill
+\DatestampYMD{2014}{09}{}--
+\DatestampYMD{2016}{5}{}
+
+\GapNoBreak
+NASA Space Grant: Women in Science and Engineering Research
+\hfill
+\DatestampYMD{2013}{01}{}--
+\DatestampYMD{2013}{12}{}
+
+\Gap
+\end{body}
+%%%%%%%%%%%
+% CV NOTE %
+%%%%%%%%%%%
+
+\begin{flushright}
+\UseNoteFont%
+[\textit{\CVNote}]%
+\hspace{2.0mm}\null
+\end{flushright}
+\end{document}
